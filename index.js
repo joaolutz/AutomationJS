@@ -1,6 +1,7 @@
 const express = require('express');
 const {keyboard, Key} = require("@nut-tree/nut-js");
 
+//setting the delay between keys (fastest is the default)
 keyboard.config.autoDelayMs = 0;
 
 function start() {
@@ -8,6 +9,7 @@ function start() {
   const app = express();
   const port = 3000;
 
+  //setting the json type as the default body parser
   app.use(express.json());
 
   app.post('/type', (req, res) => {
