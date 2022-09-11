@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 const {keyboard, Key} = require("@nut-tree/nut-js");
 
 //setting the delay between keys (fastest is the default)
@@ -12,6 +13,10 @@ function start() {
   //setting the json type as the default body parser
   app.use(express.json());
 
+  app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, '/host.html'));
+  });
+
   app.post('/type', (req, res) => {
     (async () => {
       console.log(req.body.code);
@@ -24,7 +29,7 @@ function start() {
   });
 
   app.listen(port, () => {
-    console.log(`Type app listening on port ${port}`);
+    console.log(`Type app listening on http://localhost:${port}`);
   });
   
 }

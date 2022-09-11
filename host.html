@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutomationJS Host QR Code</title>
+</head>
+<body>
+    <div align="center" style="margin: 100px;">
+        <h3>Scan the host code</h3>
+        <img id="qrcode" alt="AutomationJS Host QR Code" />
+    </div>
+    <script type="text/javascript">
+        const url = `https://chart.googleapis.com/chart?cht=qr&chs=300x300&chl=${document.URL}type`;
+        document.querySelector("#qrcode").src = url;
+    </script>
+</body>
+</html>
