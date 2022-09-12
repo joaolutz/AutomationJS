@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+const os = require("os");
 const {keyboard, Key} = require("@nut-tree/nut-js");
 
 //setting the delay between keys (fastest is the default)
@@ -29,7 +30,7 @@ function start() {
   });
 
   app.listen(port, () => {
-    console.log(`Type app listening on http://localhost:${port}`);
+    console.log(`Type app listening on http://${os.hostname}:${port}`);
   });
   
 }
