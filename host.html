@@ -12,10 +12,6 @@
         <img id="qrcode" alt="AutomationJS Host QR Code" />
         <h4></h4>
     </div>
-    <script type="text/javascript">
-        const url = `https://chart.googleapis.com/chart?cht=qr&chs=300x300&chl=${document.URL}type`;
-        document.querySelector("#qrcode").src = url;
-        document.querySelector("h4").innerHTML = document.URL + 'type';
-    </script>
+    <script src="host.js"></script>
 </body>
 </html>
