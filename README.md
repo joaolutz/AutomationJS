@@ -3,7 +3,7 @@
 # AutomationJS
 Repository for Nodejs Automation app for HTTP typing (Express)
 
-Application to be used in conjunction with the Wifi BarCode Scanner app for automating the scanning of 1D and 2D barcodes.
+Application to be used alongside the Wifi BarCode Scanner Android app for automating the scanning of 1D and 2D barcodes.
 
 ## Instructions
 
