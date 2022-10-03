@@ -18,9 +18,9 @@ Application to be used alongside the Wifi BarCode Scanner Android app for automa
 
 1. Clone the repository
 2. Open the terminal on the repository folder root.
-3. type npm install or npm install .
+3. type *npm install* or *npm install .*
 4. Wait for the installation to finish
-5. type start node index.js
+5. type *start node index.js*
 
 The Application runs on the NodeJS terminal bu default. If you want to run in other terminal or powershell just follow the steps 2 and 5 above.
 
