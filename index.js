@@ -13,11 +13,12 @@ function start() {
   const port = 3000;
   const host = `http://${os.hostname}:${port}`;
 
+  app.use(express.static(path.join(__dirname, '/public')))
   //setting the json type as the default body parser
   app.use(express.json());
 
   app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '/host.html'));
+    res.sendFile(path.join(__dirname, '/public/host.html'));
   });
 
   app.post('/type', (req, res) => {
